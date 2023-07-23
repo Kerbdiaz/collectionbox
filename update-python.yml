@@ -1,0 +1,10 @@
+---
+- name: Update Python
+  hosts: all
+  become: yes
+  tasks:
+    - name: latest version of python3 required packages installed
+      ansible.builtin.apt:
+        name:
+          - python3
+        state: latest
