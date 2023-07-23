@@ -1,8 +1,9 @@
 ---
 - hosts: all
-  become: true
-  
+
+  become: true  
   tasks:
-  - name: Update invent Hosts
-    ansible.builtin.apt:
-      update_cache: yes
+    - name: Update invent Hosts
+      apt:
+        upgrade: no
+        update_cache: yes
