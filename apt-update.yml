@@ -4,6 +4,6 @@
   become: true  
   tasks:
     - name: Update invent Hosts
-      apt:
+      ansible.builtin.apt:
         upgrade: no
         update_cache: yes
