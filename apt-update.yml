@@ -4,5 +4,5 @@
   
   tasks:
   - name: Update invent Hosts
-      apt:
-        update_cache: yes
+    ansible.builtin.apt:
+      update_cache: yes
