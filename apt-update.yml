@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: true
+  
+  tasks:
+  - name: Update invent Hosts
+      apt:
+        update_cache: yes
